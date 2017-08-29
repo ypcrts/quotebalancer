@@ -37,7 +37,7 @@ class cached_property_threadsafe(object):
 
 
 class Pair(tuple):
-    def __new__(self, begin, stop=None):
+    def __init__(self, begin, stop=None):
         assert begin
         if not stop:
             begin = stop
